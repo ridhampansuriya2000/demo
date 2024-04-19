@@ -1,0 +1,56 @@
+.loaderContainer {
+  background-color: #4b4141c4;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.logo {
+  z-index: 2;
+  width: 130px;
+  margin-bottom: 16px;
+  opacity: 0.2;
+  animation-name: logoOpacity;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.alertModalBody{
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.continueBtn{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+@keyframes logoOpacity {
+  0% {
+    opacity: 0.5;
+  }
+  25% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
